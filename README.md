@@ -35,7 +35,7 @@ Example: Create a new User<br>
 `` (hbnb) create User``
 
 Example: Create a new BaseModel<br>
-`` (hbnb) `` create BaseModel
+`` (hbnb) create BaseModel``
 
 
 # Command Interpreter: Non-Interacive Mode
@@ -58,7 +58,7 @@ For a list of built-in commands:<br>
 
 Documented commands (type help <topic>):
 ========================================
-EOF all create destroy help quit show update
+EOF  all  create  destroy  help  quit  show  update
 ```
 
 For specific help on a command:<br>
@@ -89,8 +89,8 @@ Example to create new BaseModel:<br>
 (hbnb) create BaseModel
 11d611e5-02b7-4586-a9b7-1180d7a7be96
 ```
-If class name is missing, prints: ``** class name missing **``
-if class name doesn't exist, prints: ``** class doesn't exist **``
+If class name is missing, prints: ``** class name missing **``<br>
+if class name doesn't exist, prints: ``** class doesn't exist **``<br>
 
 ## show: Prints the string representation of an instance based on the class name and id
 ### Usage:
@@ -101,10 +101,10 @@ Example:<br>
 (hbnb) show BaseModel 11d611e5-02b7-4586-a9b7-1180d7a7be96
 [BaseModel] (11d611e5-02b7-4586-a9b7-1180d7a7be96) {'id': '11d611e5-02b7-4586-a9b7-1180d7a7be96', 'created_at': datetime.datetime(2022, 10, 2, 16, 7, 17, 241925), 'updated_at': datetime.datetime(2022, 10, 2, 16, 7, 17, 241961)}
 ```
-If the class name is missing, prints:  ``** class name missing **``
-If the class name doesn't exist, prints: ``** class doesn't exist **``
-If the id is missing, prints: ``** instance id missing **``
-If the instance of the class name doesn't exist, print ``** no instance found **``
+If the class name is missing, prints:  ``** class name missing **``<br>
+If the class name doesn't exist, prints: ``** class doesn't exist **``<br>
+If the id is missing, prints: ``** instance id missing **``<br>
+If the instance of the class name doesn't exist, print ``** no instance found **``<br>
 
 ## destroy: Deletes a specific instance of a class
 ### Usage:
@@ -114,10 +114,10 @@ Example:<br>
 ```
 (hbnb) destroy BaseModel 11d611e5-02b7-4586-a9b7-1180d7a7be96
 ```
-If the class name is missing, prints:  ``** class name missing **``
-If the class name doesn't exist, prints: ``** class doesn't exist **``
-If the id is missing, prints: ``** instance id missing **``
-If the instance of the class name doesn't exist, print ``** no instance found **``
+If the class name is missing, prints:  ``** class name missing **``<br>
+If the class name doesn't exist, prints: ``** class doesn't exist **``<br>
+If the id is missing, prints: ``** instance id missing **``<br>
+If the instance of the class name doesn't exist, print ``** no instance found **``<br>
 
 ## all: Prints a string representation of all objects or all objects of a specific class(if no class is specified)
 ### Usage:
@@ -145,7 +145,7 @@ Example:<br>
 ["[User] (f381523d-d565-4b11-b97e-e572a8bb997e) {'id': 'f381523d-d565-4b11-b97e-e572a8bb997e', 'created_at': datetime.datetime(2022, 10, 2, 16, 17, 42, 842053), 'updated_at': datetime.datetime(2022, 10, 2, 16, 17, 42, 842068)}"]
 ["[BaseModel] (35f7a7b1-3c8e-49b3-b306-74bb149241e7) {'id': '35f7a7b1-3c8e-49b3-b306-74bb149241e7', 'created_at': datetime.datetime(2022, 10, 2, 16, 18, 0, 948788), 'updated_at': datetime.datetime(2022, 10, 2, 16, 18, 0, 948801)}"]
 ```
-If the class name doesn't exist, prints: ``** class doesn't exist **``
+If the class name doesn't exist, prints: ``** class doesn't exist **``<br>
 
 ## update: Update an instance
 ### Usage:
@@ -159,15 +159,15 @@ Example:<br>
 show User f381523d-d565-4b11-b97e-e572a8bb997e
 [User] (f381523d-d565-4b11-b97e-e572a8bb997e) {'id': 'f381523d-d565-4b11-b97e-e572a8bb997e', 'created_at': datetime.datetime(2022, 10, 2, 16, 17, 42, 842053), 'updated_at': datetime.datetime(2022, 10, 2, 16, 17, 42, 842068), 'first_name': 'Joseph'}
 ```
-Only one attribute can be updated at a time
-Each argument is to be separated by a space
-A string argument with a space must be wrapped with double quotes
-If the class name is missing, prints:  ``** class name missing **``
-If the class name doesn't exist, prints: ``** class doesn't exist **``
-If the id is missing, prints: ``** instance id missing **``
-If the instance of the class name doesn't exist, prints:  ``** no instance found **``
-If the attribute name is missing, prints:  ``** attribute name missing **``
-If the value for the attribute name doesn't exist, prints: ``**value missing **``
+Only one attribute can be updated at a time<br>
+Each argument is to be separated by a space<br>
+A string argument with a space must be wrapped with double quotes<br>
+If the class name is missing, prints:  ``** class name missing **``<br>
+If the class name doesn't exist, prints: ``** class doesn't exist **``<br>
+If the id is missing, prints: ``** instance id missing **``<br>
+If the instance of the class name doesn't exist, prints:  ``** no instance found **``<br>
+If the attribute name is missing, prints:  ``** attribute name missing **``<br>
+If the value for the attribute name doesn't exist, prints: ``**value missing **``<br>
 
 ## quit: Quit the console by raising the SystemExit exception
 ### Usage:
@@ -179,7 +179,7 @@ Example:<br>
 
 ## EOF: Quit the console by stopping the process
 ### Usage:
-Press Ctrl + Z on keyboard
+Press Ctrl + Z on keyboard<br>
 ```
 (hbnb) 
 [3]+  Stopped                 ./console.py

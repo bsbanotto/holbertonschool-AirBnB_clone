@@ -5,6 +5,8 @@ from models import storage
 from models.base_model import BaseModel
 import unittest
 import os
+from datetime import datetime, time
+import pep8
 
 
 class TestBaseModelDoc(unittest.TestCase):
@@ -33,6 +35,25 @@ class TestBaseModelDoc(unittest.TestCase):
     def test_to_dict_doc(self):
         """Checks for documentation of to_dict() method"""
         self.assertGreaterEqual(len(BaseModel.to_dict.__doc__), 1)
+
+
+class TestBaseModelPep8(unittest.TestCase):
+    """Tests BaseModel Class for pep8 compliance"""
+
+    def test_pep8_compliance(self):
+        """Tests to ensure models/amenity.py is pep8 compliant"""
+        pep8style = pep8.StyleGuide(quiet=True)
+        result = pep8style.check_files(["models/base-model.py"])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style errors (and warnings).")
+
+    def test_pep8_compliance(self):
+        """Tests to ensure tests/test_models/base_model.py is pep8 compliant"""
+        pep8style = pep8.StyleGuide(quiet=True)
+        result = pep8style.check_files(["tests/test_models\
+                                       /test_base_model.py"])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style errors (and warnings).")
 
 
 class TestBaseModel(unittest.TestCase):
