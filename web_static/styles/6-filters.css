@@ -48,13 +48,19 @@
     margin-top: -15px;
 }
 
-.popover {
+.filters .popover {
     list-style-type: none;
     display: none;
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     padding: 15px;
+    position: relative;
+    z-index: 100;
+}
+
+.filters .popover h2 {
+    margin-bottom: 5px;
 }
 
 .subpopover {
